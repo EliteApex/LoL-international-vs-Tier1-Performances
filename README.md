@@ -22,3 +22,15 @@ The columns correspond to those statistics:
 - *"creepscore"* corresponds to the total sum of the minions and monsters killed by the players on the team.
 
 The question at hand: **Do teams perform differently depending on whether they are playing on a regional stage or on an international stage?**
+
+
+# Cleaning and EDA (Exploratory Data Analysis)
+
+## Data Cleaning:
+
+As part of our project, we took several steps to clean and refine the data to make it more useful and accessible. Our process involved the following steps:
+
+- We created a new column called 'creepscore' by combining the 'minionkills' and 'monsterkills' columns. This helped us to represent these measures more accurately and effectively.
+- We streamlined the dataset by removing all irrelevant columns, and keeping only the most relevant ones for our analysis. These columns are: 'gameid', 'league', 'datacompleteness', 'teamname', 'result', 'kills', 'dragons', 'elders', 'heralds', 'barons', 'towers', 'visionscore', and 'creepscore'.
+- To assess the performance of the teams, we developed a formula that incorporates several of the remaining columns. We then created a new column called 'performance' that reflects our calculations, giving us a reliable way to measure and compare team performance.
+- Another step we took was to create a new column called 'gametype'. This column identifies whether the game played was international or regional, providing us with a valuable way to later on group by and analyze the data. 
